@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0.0 Beta1"
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="12"
+    package="com.everythingtoolbox"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="12">
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="31"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:theme="@style/Theme.EverythingToolbox"
+        android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:name="com.everythingtoolbox.base.ToolboxApplication"
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@drawable/logo"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:theme="@style/Theme.EverythingToolbox"
+            android:name="com.everythingtoolbox.ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Theme.EverythingToolbox"
+            android:name="com.everythingtoolbox.tools.battery.BatteryActivity"
+            android:exported="false"
+            android:parentActivityName="com.everythingtoolbox.ui.MainActivity"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.everythingtoolbox.androidx-startup">
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup"/>
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

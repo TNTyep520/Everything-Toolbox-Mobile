@@ -1,3 +1,15 @@
+### Everything-Toolbox-Mobile, 但是 Jadx 鉴证英雄
+
+**我们不反对用 AI 实现一个功能，但在使用 AI 生成代码后请认真检查 AI 生成的代码，而不是把错误百出的代码交给别人。**
+
+**我看了你的代码质量，发现其中充斥着大量 AI 生成的混乱错误的内容，并且严重破坏了兼容性，所以我认为你没有足够的能力驾驭 AI。**
+
+**如果你希望通过 AI 实现功能并提交 Commit，那么请先提高自己审查代码的能力，让 AI 实现功能后认真检查代码，确保其正确且可维护再提交 Commit。**
+
+<details>
+
+<summary>仅作反编译,不做维护的需要,原仓库 README.md 内容,不做评价</summary>
+
 [Windows版](https://github.com/ELFTS/Everything-Toolbox)
 
 <div align="center">
